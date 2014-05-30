@@ -1,0 +1,10 @@
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\bin\Debug\WindowsBase.dll
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\bin\Debug\WindowsBase.pdb
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase_MarkupCompile.cache
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase_MarkupCompile.lref
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\Themes\Generic.baml
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase.g.resources
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase.Properties.Resources.resources
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase.csproj.GenerateResource.Cache
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase.dll
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\WindowsBase\WindowsBase\obj\Debug\WindowsBase.pdb

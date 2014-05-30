@@ -1,0 +1,28 @@
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\App.g.cs
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI_MarkupCompile.cache
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\UI.exe
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\UI.pdb
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\ControlsBase.dll
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\ControlsBase.pdb
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\MainWindow.baml
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.g.resources
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.Properties.Resources.resources
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.exe
+C:\Users\Eljo\Documents\My Dropbox\Ejemplos Net\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.pdb
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.exe
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.pdb
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\UI.exe
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\UI.pdb
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\ControlsBase.dll
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\bin\Debug\ControlsBase.pdb
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\MainWindow.baml
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\App.g.cs
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI_MarkupCompile.cache
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.g.resources
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.Properties.Resources.resources
+C:\Users\xurxo\Dropbox\Desarrollo\ProyectosPersonales\XurxoDeveloper.Blogspot\HerenciaVisualWPF\UI\obj\x86\Debug\UI.csproj.GenerateResource.Cache

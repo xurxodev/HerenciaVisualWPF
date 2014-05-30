@@ -1,0 +1,179 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ControlsBase">
+
+    <!--Colores que usara la ventana-->
+    <SolidColorBrush x:Key="NormalBorderBrush" Color="#FF333333" />
+    <RadialGradientBrush x:Key="ModuleBrush">
+        <GradientStop Color="White" Offset="0" />
+        <GradientStop Color="#4a81aa" Offset="1" />
+    </RadialGradientBrush>
+    <LinearGradientBrush x:Key="WindowBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="White" Offset="0" />
+        <GradientStop Color="#FF97AFC7" Offset="1" />
+    </LinearGradientBrush>
+
+    <!--Estilo de los botones  de la ventana (maximizar, minimizar, restaurar)-->
+    <Style TargetType="Button" x:Key="WindowButtonStyle" >
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="BorderButton" Background="Transparent" Margin="10,15,10,15" >
+                        <ContentPresenter x:Name="CloseText" VerticalAlignment="Center" HorizontalAlignment="Center"  />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="CtrlTempWindowBase" TargetType="{x:Type local:WindowBase}" >
+        <Border  CornerRadius="5" Background="{StaticResource NormalBorderBrush}"  >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <!--Fila para el borde superior-->
+                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="5"/>
+                    <!--Fila para el contentpresenter-->
+                    <RowDefinition  Height="*"/>
+
+                </Grid.RowDefinitions>
+
+
+                <Border x:Name="TopBorder" VerticalAlignment="Stretch" Background="Transparent"  >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Image Margin="5,0,5,0" Width="24" Height="24" x:Name="Icon" Grid.Column="0" Source="{Binding Icon,RelativeSource={RelativeSource FindAncestor,AncestorType=local:WindowBase}}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Title,RelativeSource={RelativeSource FindAncestor,AncestorType=Window}}" Foreground="White" FontSize="18" FontWeight="Bold"  VerticalAlignment="Center" />
+
+                        <!--botones maximizar minimizar y cerrar-->
+                        <Button Style="{StaticResource WindowButtonStyle}"  Grid.Column="2" x:Name="btMinimize" >
+                            <Image Height="18" Width="18">
+                                <Image.Resources>
+                                    <Style TargetType="{x:Type Image}">
+                                        <Setter Property="Source" Value="/ControlsBase;component/Resources/Minimize.png"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Source" Value="/ControlsBase;component/Resources/MinimizeOver.png"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Resources>
+                            </Image>
+                        </Button>
+                        <Button Style="{StaticResource WindowButtonStyle}"  Grid.Column="3" x:Name="btMaximize" >
+                            <Image Height="18" Width="18">
+                                <Image.Resources>
+                                    <Style TargetType="{x:Type Image}">
+                                        <Setter Property="Source" Value="/ControlsBase;component/Resources/Maximize.png"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+
+                                                <Setter Property="Source" Value="/ControlsBase;component/Resources/MaximizeOver.png"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Resources>
+                            </Image>
+                        </Button>
+                        <Button Style="{StaticResource WindowButtonStyle}" Grid.Column="4" x:Name="btClose" >
+                            <Image Width="18" >
+                                <Image.Resources>
+                                    <Style TargetType="{x:Type Image}">
+
+                                        <Setter Property="Source" Value="/ControlsBase;component/Resources/Close.png"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+
+                                                <Setter Property="Source" Value="/ControlsBase;component/Resources/CloseOver.png"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Image.Resources>
+                            </Image>
+                        </Button>
+                    </Grid>
+
+                </Border>
+                <Border Grid.Row="1" Background="{StaticResource ModuleBrush}" Margin="5,0,5,0" />
+
+                <!--content presenter de la ventana para que en las ventanas que hereden de esta pongan lo que se requiera-->
+                <Border Grid.Row="2" Margin="5,0,5,5" Background="{StaticResource WindowBrush}" >
+                    <ContentPresenter Grid.Row="0" VerticalAlignment="Stretch" />
+                </Border>
+            </Grid>
+        </Border>
+
+    </ControlTemplate>
+
+    <!--Estilo de la ventana Base-->
+    <Style TargetType="{x:Type local:WindowBase}" >
+        <Setter Property="AllowsTransparency" Value="True" />
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="WindowStyle" Value="None" />
+        <Setter Property="Template" Value="{StaticResource CtrlTempWindowBase}"/>
+    </Style>
+    
+    <!--Estilo de la ventana Base Lista-->    
+    <Style TargetType="{x:Type local:WindowListBase}" BasedOn="{StaticResource {x:Type local:WindowBase}}">
+        <Setter Property="Content">
+            <Setter.Value>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <!--Fila para menu-->
+                        <RowDefinition Height="Auto"/>
+                        <!--Fila para la zona de filtro-->
+                        <RowDefinition Height="Auto"/>
+                        <!--Fila para el Grid-->
+                        <RowDefinition Height="*"/>
+                        <!--Fila para los botones-->
+                        <RowDefinition  Height="40"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Menu>
+                        <MenuItem Header="Menu">
+                            <MenuItem Header="Exportar a Excel">
+                                <MenuItem.Icon>
+                                    <Image Width="24" Height="24"  Source="/ControlsBase;component/Resources/Excel.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Exportar a Excel">
+                                <MenuItem.Icon>
+                                    <Image Width="24" Height="24"  Source="/ControlsBase;component/Resources/PDF.png"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Imprimir"/>
+                        </MenuItem>
+                    </Menu>
+
+                    <Border Grid.Row="1" Background="gray">
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="Texto de busqueda" Margin="15,0,5,0" VerticalAlignment="Center" Foreground="White"/>
+                            <TextBox Width="250" Margin="5" VerticalAlignment="Center" />
+                            <ContentControl Content="{Binding FilterRegion, RelativeSource={RelativeSource AncestorType={x:Type local:WindowListBase}}}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <DataGrid Margin="30" Grid.Row="2" local:DataGridEx.ColumnsSource="{Binding Columns, RelativeSource={RelativeSource AncestorType={x:Type local:WindowListBase}}}">
+ 
+                    </DataGrid>      
+
+                    <Border Grid.Row="3" Background="{StaticResource WindowBrush}" >
+                        <ContentControl  Content="{Binding ButtonRegion, RelativeSource={RelativeSource AncestorType={x:Type local:WindowListBase}}}"/>
+                    </Border>
+                    
+                </Grid>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

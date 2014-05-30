@@ -1,0 +1,25 @@
+﻿<base:WindowListBase x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:base="clr-namespace:ControlsBase;assembly=ControlsBase"
+        Title="MainWindow" Height="500" Width="675">
+
+    <base:WindowListBase.FilterRegion>
+        <StackPanel Orientation="Horizontal" >
+            <TextBlock Text="Fecha de nacimiento" Margin="5,0,5,0" VerticalAlignment="Center" Foreground="White"/>
+            <DatePicker Width="150" Margin="5" VerticalAlignment="Center" />
+            
+        </StackPanel>
+    </base:WindowListBase.FilterRegion>
+    
+    <base:WindowListBase.Columns>
+        <DataGridTextColumn Header="Nombre" />
+        <DataGridTextColumn Header="Apellidos"/>
+        <DataGridTextColumn Header="Dirección"/>
+    </base:WindowListBase.Columns>
+    
+    <base:WindowListBase.ButtonRegion>
+        <Button Content="Salir" Width="125" HorizontalAlignment="Right" Margin="5" />
+    </base:WindowListBase.ButtonRegion>
+    
+</base:WindowListBase>
